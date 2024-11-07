@@ -140,10 +140,10 @@ namespace Restoran_API.Controllers
         [HttpPost("kasutaja")]
         public List<Kasutaja> PostKasutaja([FromBody] Kasutaja kasutaja)
         {
-            if (kasutaja != null && !string.IsNullOrEmpty(kasutaja.Salasona))
-            {
-                kasutaja.Salasona = BCrypt.Net.BCrypt.HashPassword(kasutaja.Salasona);
-            }
+            //if (kasutaja != null && !string.IsNullOrEmpty(kasutaja.Salasona))
+            //{
+            //    kasutaja.Salasona = BCrypt.Net.BCrypt.HashPassword(kasutaja.Salasona);
+            //}
 
             _context.Kasutajad.Add(kasutaja);
             _context.SaveChanges();
