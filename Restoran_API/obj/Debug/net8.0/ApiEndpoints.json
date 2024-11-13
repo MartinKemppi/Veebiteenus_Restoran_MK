@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "Veebirakenduste_loomine_API_MartinKemppi.Controllers.PaymentController",
+    "Method": "MakePayment",
+    "RelativePath": "api/Payment/{sum}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sum",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Restoran_API.Controllers.RestoranController",
     "Method": "GetArve",
     "RelativePath": "api/Restoran/arve",

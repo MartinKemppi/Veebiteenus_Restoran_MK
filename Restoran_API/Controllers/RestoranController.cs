@@ -182,10 +182,10 @@ namespace Restoran_API.Controllers
                 return NotFound();
             }
 
-            if (!string.IsNullOrEmpty(updatedKasutaja.Salasona))
-            {
-                updatedKasutaja.Salasona = BCrypt.Net.BCrypt.HashPassword(updatedKasutaja.Salasona);
-            }
+            //if (!string.IsNullOrEmpty(updatedKasutaja.Salasona))
+            //{
+            //    updatedKasutaja.Salasona = BCrypt.Net.BCrypt.HashPassword(updatedKasutaja.Salasona);
+            //}
 
             kasutaja.KasutajaNimi = updatedKasutaja.KasutajaNimi;
             kasutaja.Salasona = updatedKasutaja.Salasona;
