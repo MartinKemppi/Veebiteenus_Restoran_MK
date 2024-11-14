@@ -248,6 +248,7 @@ namespace Restoran_API.Controllers
             restoran.Laud = updatedRestoran.Laud;
             restoran.LauadeMahutavus = updatedRestoran.LauadeMahutavus;
             restoran.Tagid = updatedRestoran.Tagid;
+            restoran.LauaSeis = updatedRestoran.LauaSeis;
 
             _context.Restoranid.Update(restoran);
             _context.SaveChanges();

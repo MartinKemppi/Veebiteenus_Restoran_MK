@@ -7,14 +7,16 @@
         public int Laud { get; set; }
         public int LauadeMahutavus { get; set; }
         public string Tagid { get; set; }
+        public string LauaSeis { get; set; }
 
-        public Restoran(int id, string nimi, int laud, int lauadeMahutavus, string tagid)
+        public Restoran(int id, string nimi, int laud, int lauadeMahutavus, string tagid, string lauaSeis)
         {
             Id = id;
             Nimi = nimi;
             Laud = laud;
             LauadeMahutavus = lauadeMahutavus;
             Tagid = tagid;
+            LauaSeis = lauaSeis;
         }
     }
 }
